@@ -1,0 +1,10 @@
+.preview {
+    width: 300px;
+    height: 200px;
+    -webkit-transform: scale(.5);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
