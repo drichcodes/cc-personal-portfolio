@@ -4,6 +4,7 @@
     --clr-accent: #be3144;
     --clr-text: #f0f0f0;
 
-    --ff-header: ;
+    --ff-header: 'Heebo', sans-serif;
     --ff-paragraph:;
+    --ff-accent: 'WindSong', cursive;
 }
