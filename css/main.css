@@ -5,6 +5,102 @@
     --clr-text: #f0f0f0;
 
     --ff-header: 'Heebo', sans-serif;
-    --ff-paragraph:;
+    --ff-paragraph: 'Libre Baskerville', serif;
     --ff-accent: 'WindSong', cursive;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    color: var(--clr-text);
+    font-family: var(--ff-header);
+}
+
+/***** GLOBAL STYLES *****/
+a {
+    color: var(--clr-text);
+    list-style: none;
+    text-decoration: none;
+}
+
+/***** Navbar *****/
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--clr-accent);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#navbar ul li {
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 1rem 2rem;
+    font-size: 1.5rem;
+}
+
+/***** Welcome Section *****/
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--clr-bg-main);
+    font-size: 2.5rem;
+}
+
+h1 {
+    max-width: 80%;
+}
+
+#welcome-section span {
+    color: var(--clr-accent);
+    font-family: var(--ff-accent);
+}
+
+/***** Projects *****/
+#projects {
+    padding-top: 5rem;
+    background-color: var(--clr-bg-accent);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+.project-tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 1px solid var(--clr-text);
+    margin: 1rem;
+    width: 60vh;
+}
+
+.project-tile img {
+    width: 50vh;
+    height: 70vh;
+    padding: 0.5rem;
+    margin: 0.75rem;
+}
+
+.project-tile p {
+    text-align: center;
+    font-size: 1.5rem;
 }
